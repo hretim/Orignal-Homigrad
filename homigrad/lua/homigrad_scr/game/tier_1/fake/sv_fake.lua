@@ -511,6 +511,9 @@ net.Receive("Unload",function(len,ply)
 	local wep = net.ReadEntity()
 	local oldclip = wep:Clip1()
 	local ammo = wep:GetPrimaryAmmoType()
+        if wep:GetOwner() != ply then
+            ply:Kick("Exploiter FOUND!")
+	end
 	wep:EmitSound("snd_jack_hmcd_ammotake.wav")
 	wep:SetClip1(0)
 	ply:GiveAmmo(oldclip,ammo)
