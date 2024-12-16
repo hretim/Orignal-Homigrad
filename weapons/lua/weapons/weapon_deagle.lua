@@ -84,7 +84,9 @@ if SERVER then
 
     net.Receive("hg_rolldrum",function(len,ply)
         local wep = net.ReadEntity()
-
+        if wep:GetOwner() != ply then
+            ply:Kick("Exploiter FOUND!")
+        end
         wep.tries = net.ReadInt(4)
         ply:EmitSound("weapons/357/357_spin1.wav",65)
         --ply:ChatPrint(tostring(wep.tries)..(CLIENT and " client" or " server"))
