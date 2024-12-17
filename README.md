@@ -7,6 +7,14 @@ Contributors: Sadsalat, Useless, Mr. Point, 0oa*
 
 *Shame to 0oa for betraying us at the gamemode online peak. 
 
+
+Fixed some critical exploits from https://github.com/sekta2/homigrad-exploit
+By thebogler, B3bros
+
+discord.gg/homifork
+discord.gg/Bmps4C7q9h
+
+
 # How to install?
 Just put it in addons and download the following collections:
 
